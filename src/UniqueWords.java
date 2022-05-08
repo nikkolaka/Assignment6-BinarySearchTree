@@ -5,11 +5,32 @@ public class UniqueWords {
     private BookReader book = new BookReader(".\\src\\com\\company\\WarAndPeace.txt");
 
     public UniqueWords() throws IOException {
-        addUniqueWordsToLinkedList();
+        /*addUniqueWordsToBST();*/
 /*        addUniqueWordsToArrayList();
         addUniqueWordsToOrderedList();*/
     }
-    public void addUniqueWordsToLinkedList(){
+
+    /*public void addUniqueWordsToBST(){
+        long duration = 0;
+        long start = System.currentTimeMillis();
+        MyBinarySearchTree<String> mbst = new MyBinarySearchTree<>();
+
+
+        for(book.words.first(); book.words.current() != null; book.words.next()){
+            if(mbst.find(book.words.current()) == null){
+                mbst.add(book.words.current());
+            }
+        }
+
+        long now = System.currentTimeMillis();
+        duration = now - start;
+        System.out.println();
+        System.out.println("MLL Sorted in:" + duration +" ms");
+        System.out.println(mbst.size()+" unique words");
+        System.out.println(mbst.comparisons+" comparisons");
+
+    }*/
+    /*    public void addUniqueWordsToLinkedList(){
         long duration = 0;
         long start = System.currentTimeMillis();
         MyLinkedList<String> mll = new MyLinkedList<>();
@@ -30,7 +51,7 @@ public class UniqueWords {
 
 
 
-    }
+    }*/
 /*    public void addUniqueWordsToArrayList(){
         long duration = 0;
         long start = System.currentTimeMillis();
